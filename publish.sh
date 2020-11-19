@@ -1,6 +1,6 @@
 #!/bin/bash
 
-jupyter-nbconvert --to slides Presentation.ipynb --reveal-prefix=reveal.js
+jupyter nbconvert --to slides Presentation.ipynb --reveal-prefix=reveal.js
 mv Presentation.slides.html  index.html
 mkdir -p /tmp/workspace
 cp -r * /tmp/workspace/
